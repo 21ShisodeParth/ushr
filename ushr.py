@@ -3,14 +3,14 @@ import tekore as tk
 import requests
 
 sp = tk.Spotify()
-token = 'BQAqwZpnGMlIkFMz7c4kK_KOMCZBAYu0knyJxEV-mmNtpTHh4U1D9UNzJOThG50yLPrbbsvKsFiQTdTdk71GzfEfVhAWATac3J4Eyx46AGgGT1AdOV874l68X8jjYQloRf38ynB9GVcvx9DYNT8RlQSnByQdvO7J26n45biRRPWPXOWNb6h9jpWmo1KHXvak1R4HCzNJRUKli2EsWz62l7Masp2EXkBXnhHkvJTxXB1KM11Tm-sbhDp_hAqurA117buPPa-QLrwIkZxskCE5ls13Cfg6YNlvSrLy_A'
+token = ''
 
-# artists = []
-# with sp.token_as(token):
-#     for term in ["long_term", "short_term"]:
-#         temp_artists = sp.current_user_top_artists(limit=1, offset=0, time_range=term)
-#         for artist in temp_artists.items:
-#             artists.append(artist.name)
+artists = []
+with sp.token_as(token):
+    for term in ["long_term", "short_term"]:
+        temp_artists = sp.current_user_top_artists(limit=1, offset=0, time_range=term)
+        for artist in temp_artists.items:
+            artists.append(artist.name)
 
 # print(artists)
 
