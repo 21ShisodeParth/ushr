@@ -3,7 +3,7 @@ import tekore as tk
 import requests
 
 sp = tk.Spotify()
-token = ''
+token = '' #your token
 
 artists = []
 with sp.token_as(token):
@@ -14,7 +14,7 @@ with sp.token_as(token):
 
 # print(artists)
 
-key = 'nsLfwpueMjA6sRNDrJ8QOg90LOO4ApAj'
+key = '' #your token
 tm = ticketpy.ApiClient(key)
 artists = ["Kanye West", "BIGBABYGUCCI"]
 
